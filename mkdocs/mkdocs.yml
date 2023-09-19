@@ -1,0 +1,24 @@
+site_name: My Docs
+theme:
+  name: material
+  language: ja
+  features:
+    tabs: true
+markdown_extensions:
+  - admonition
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  # - pymdownx.tilde
+# copyright: "Copyright © Tokyo Metropolitan Industrial Technology Research institute"
+nav: 
+  - Home: index.md
+  - あ: 
+    - い: test2.md
+    - う: test1.md
