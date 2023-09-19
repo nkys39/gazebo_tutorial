@@ -22,6 +22,7 @@ plugins:
 # copyright: "Copyright © Tokyo Metropolitan Industrial Technology Research institute"
 nav: 
   - Home: index.md
+  - Gazeboの使い方: 1_gazeboの概要.md
   - あ: 
-    - い: test2.md
-    - う: test1.md
+    - い: test1.md
+    - う: test2.md
