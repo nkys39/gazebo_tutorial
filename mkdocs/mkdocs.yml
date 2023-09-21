@@ -22,7 +22,12 @@ plugins:
 # copyright: "Copyright © Tokyo Metropolitan Industrial Technology Research institute"
 nav: 
   - Home: index.md
-  - Gazeboの使い方: 1_gazeboの概要.md
-  - あ: 
-    - い: test1.md
-    - う: test2.md
+  - Gazeboの使い方: gazeboの概要.md
+  - Gazeboでのロボットの作り方: gazeboでのロボットの作り方.md
+  - GazeboとROSの連携方法: GazeboとROSの連携方法.md
+  - 各種インストール方法: 
+    - ①macOSに直接インストールして動かす: homebrew_install.md
+    - ②仮想マシン(UTM)上のUbuntuで動かす: utm_install.md
+    - ③macOSのDocker上のUbuntuで動かす: docker_install.md
+    - ④仮想マシン(UTM)のDocker上のUbuntuで動かす: utm_docker_install.md
+  - Gazeboの応用: gazebo_advance.md 

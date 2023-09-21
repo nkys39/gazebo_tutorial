@@ -13,7 +13,7 @@
     
     
       
-        <title>Test2 - My Docs</title>
+        <title>①macOSに直接インストールして動かす - My Docs</title>
       
     
     
@@ -61,6 +61,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#homebrew" class="md-skip">
+          コンテンツにスキップ
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -90,7 +95,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Test2
+              ①macOSに直接インストールして動かす
             
           </span>
         </div>
@@ -236,12 +241,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" checked>
       
       
       
@@ -262,11 +269,87 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../homebrew_install/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          ①macOSに直接インストールして動かす
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         ①macOSに直接インストールして動かす
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目次">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#homebrew_1" class="md-nav__link">
+    Homebrewとは
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#homebrew_2" class="md-nav__link">
+    Homebrewのインストール
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gazebo" class="md-nav__link">
+    Gazeboのインストール
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gazebo_1" class="md-nav__link">
+    Gazeboの動作確認
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gazebo_2" class="md-nav__link">
+    Gazeboのアンインストール
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    参考サイト
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -352,6 +435,58 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#homebrew_1" class="md-nav__link">
+    Homebrewとは
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#homebrew_2" class="md-nav__link">
+    Homebrewのインストール
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gazebo" class="md-nav__link">
+    Gazeboのインストール
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gazebo_1" class="md-nav__link">
+    Gazeboの動作確認
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gazebo_2" class="md-nav__link">
+    Gazeboのアンインストール
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    参考サイト
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -366,9 +501,55 @@
                   
 
 
-  <h1>Test2</h1>
-
-<p>b</p>
+<h1 id="homebrew">Homebrewを用いたインストール</h1>
+<p>Homebrewを用いてmacOS上に直接Gazeboをインストールします。</p>
+<h2 id="homebrew_1">Homebrewとは</h2>
+<p>HomebrewはmacOSやLinux用のパッケージマネージャーです。<br />
+Appleが提供していないライブラリや開発ツールなどを簡単にインストールすることができます。</p>
+<h2 id="homebrew_2">Homebrewのインストール</h2>
+<p>ターミナルを開き下記コマンドを入力します。
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>/bin/bash -c <span class="s2">&quot;</span><span class="k">$(</span>curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh<span class="k">)</span><span class="s2">&quot;</span>
+</code></pre></div>
+<img alt="homebrew1.png" src="../img/homebrew/homebrew1.png" /></p>
+<p>パスワードを入力します。
+<img alt="homebrew2.png" src="../img/homebrew/homebrew2.png" /></p>
+<p>下記が出たら<code>Enterキー</code>を押します。
+<img alt="homebrew3.png" src="../img/homebrew/homebrew3.png" /></p>
+<p>下記のように<code>Installation successful</code>と表示されていればインストール完了です。<br />
+<img alt="homebrew4.png" src="../img/homebrew/homebrew4.png" /></p>
+<h2 id="gazebo">Gazeboのインストール</h2>
+<p>Gazeboをインストールします。
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>curl -ssL http://get.gazebosim.org <span class="p">|</span> sh
+</code></pre></div>
+上記はGazeboのone-linerインストール方法で、他の環境でも同様にインストールできます。  PC環境を自動認識して、適切なインストール方法を選択してくれます。<br />
+実態としては下記を行っています。<br />
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1"># Homebrewのインストール</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>ruby -e <span class="s2">&quot;</span><span class="k">$(</span>curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install<span class="k">)</span><span class="s2">&quot;</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="c1"># XQuartzのインストール</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>brew install homebrew/cask/xquartz
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="c1"># osrf/simulationリポジトリをタップする(リポジトリ内にアクセス可能にする)</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>brew tap osrf/simulation
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="c1"># gazebo11のインストール</span>
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>brew install gazebo11
+</code></pre></div></p>
+<h2 id="gazebo_1">Gazeboの動作確認</h2>
+<p>新しくターミナルを開き、下記を入力して実行します。
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>gazebo 
+</code></pre></div>
+下記のような画面が出ればインストール成功です。</p>
+<p><img alt="gazebo.png" src="../img/gazebo/gazebo.png" /></p>
+<h2 id="gazebo_2">Gazeboのアンインストール</h2>
+<p>アンインストールする方法も記載しておきます。(講習会終了後削除していただて構いません)
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>brew uninstall gazebo11
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>brew untap osrf/simulation
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>brew uninstall --cask xquartz
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>brew cleanup
+</code></pre></div></p>
+<h2 id="_1">参考サイト</h2>
+<ul>
+<li><a href="https://brew.sh/ja/">Homebrew本家ページ</a></li>
+<li><a href="https://classic.gazebosim.org/tutorials?tut=install_on_mac&amp;cat=install">Install Gazebo on Mac (using homebrew)</a></li>
+</ul>
 
 
 
@@ -384,6 +565,42 @@
       </main>
       
         <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="フッター" >
+      
+        
+        <a href="../Gazebo%E3%81%A8ROS%E3%81%AE%E9%80%A3%E6%90%BA%E6%96%B9%E6%B3%95/" class="md-footer__link md-footer__link--prev" aria-label="前: GazeboとROSの連携方法" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                前
+              </span>
+              GazeboとROSの連携方法
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../utm_install/" class="md-footer__link md-footer__link--next" aria-label="次: ②仮想マシン(UTM)上のUbuntuで動かす" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                次
+              </span>
+              ②仮想マシン(UTM)上のUbuntuで動かす
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
