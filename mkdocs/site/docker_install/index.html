@@ -61,6 +61,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#macosdockerubuntu" class="md-skip">
+          コンテンツにスキップ
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -193,7 +198,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../gazebo%E3%81%AE%E6%A6%82%E8%A6%81/" class="md-nav__link">
+      <a href="../gazebo%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9/" class="md-nav__link">
         Gazeboの使い方
       </a>
     </li>
@@ -300,10 +305,71 @@
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          ③macOSのDocker上のUbuntuで動かす
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         ③macOSのDocker上のUbuntuで動かす
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目次">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#docker-desktop-for-mac" class="md-nav__link">
+    Docker Desktop for Macのインストール
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#docker" class="md-nav__link">
+    Dockerの動作確認
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dockerubuntugazebo" class="md-nav__link">
+    Docker上のUbuntuでGazeboを動かす
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gazebo" class="md-nav__link">
+    Gazeboの動作確認
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    参考ページ
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -339,7 +405,7 @@
   
     <li class="md-nav__item">
       <a href="../gazebo_advance/" class="md-nav__link">
-        Gazeboの応用
+        Gazeboの参考ページ
       </a>
     </li>
   
@@ -362,6 +428,51 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#docker-desktop-for-mac" class="md-nav__link">
+    Docker Desktop for Macのインストール
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#docker" class="md-nav__link">
+    Dockerの動作確認
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dockerubuntugazebo" class="md-nav__link">
+    Docker上のUbuntuでGazeboを動かす
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gazebo" class="md-nav__link">
+    Gazeboの動作確認
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    参考ページ
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -376,10 +487,67 @@
                   
 
 
-  <h1>③macOSのDocker上のUbuntuで動かす</h1>
-
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>
-</code></pre></div>
+<h1 id="macosdockerubuntu">macOSのDocker上のUbuntuで動かす</h1>
+<h2 id="docker-desktop-for-mac">Docker Desktop for Macのインストール</h2>
+<p>下記ページよりインストーラをダウンロードする。<br />
+<a href="https://docs.docker.com/desktop/install/mac-install/">Install Docker Desktop on Mac</a></p>
+<p><img alt="docker1.png" src="../img/docker/docker1.png" />
+インストーラを起動したら、ドラッグ&amp;ドロップする
+<img alt="docker2.png" src="../img/docker/docker2.png" /></p>
+<h2 id="docker">Dockerの動作確認</h2>
+<p>ターミナルを開き、下記を実行し、正常実行できればOK
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>docker run hello-world
+</code></pre></div></p>
+<h2 id="dockerubuntugazebo">Docker上のUbuntuでGazeboを動かす</h2>
+<p>Dockerコンテナ上のGUIやGPUを使用する場合の設定がPC環境によって異なるため、Gazeboなどを表示しようとすると難しい。TiryohさんはDocker＋ブラウザを利用する<a href="https://memoteki.net/archives/2955">ROS/ROS2のGUIをWebブラウザ経由でお手軽に試せるDockerfileを公開しました</a>の方法でPC依存なく実行できる方法を公開しているのでこれを利用する。  </p>
+<p>ターミナルを開き、フォルダとdocker-compose.ymlを作成します。
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>mkdir ~/vnc_docker_ros/
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="nb">cd</span> ~/vnc_docker_ros/
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>mkdir catkin_ws/
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>mkdir ros2_ws/
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>touch ~/vnc_docker_ros/docker-compose.yml
+</code></pre></div></p>
+<p>エディタで<code>~/vnc_docker_ros/docker-compose.yml</code>を開き下記を記述します。
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;3&#39;</span><span class="w"></span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="nt">services</span><span class="p">:</span><span class="w"></span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">  </span><span class="nt">ros-desktop-vnc</span><span class="p">:</span><span class="w"></span>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">    </span><span class="c1"># image: tiryoh/ros-desktop-vnc:kinetic</span><span class="w"></span>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">    </span><span class="c1"># image: tiryoh/ros-desktop-vnc:melodic</span><span class="w"></span>
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="w">    </span><span class="c1"># image: tiryoh/ros-desktop-vnc:melodic-arm64</span><span class="w"></span>
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">    </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">tiryoh/ros-desktop-vnc:noetic</span><span class="w"></span>
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="w">    </span><span class="c1"># image: tiryoh/ros-desktop-vnc:noetic-arm64</span><span class="w"></span>
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="w">    </span><span class="c1"># image: tiryoh/ros2-desktop-vnc:dashing</span><span class="w"></span>
+<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="w">    </span><span class="c1"># image: tiryoh/ros2-desktop-vnc:dashing-arm64</span><span class="w"></span>
+<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="w">    </span><span class="c1"># image: tiryoh/ros2-desktop-vnc:eloquent</span><span class="w"></span>
+<a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="w">    </span><span class="c1"># image: tiryoh/ros2-desktop-vnc:foxy</span><span class="w"></span>
+<a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a><span class="w">    </span><span class="c1"># image: tiryoh/ros2-desktop-vnc:galactic</span><span class="w"></span>
+<a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a><span class="w">    </span><span class="c1"># image: tiryoh/ros2-desktop-vnc:galactic-arm64</span><span class="w"></span>
+<a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a><span class="w">    </span><span class="c1"># image: tiryoh/ros2-desktop-vnc:humble</span><span class="w"></span>
+<a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a><span class="w">    </span><span class="c1"># image: tiryoh/ros2-desktop-vnc:iron</span><span class="w"></span>
+<a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a><span class="w">    </span><span class="c1"># image: tiryoh/ros2-desktop-vnc:rolling</span><span class="w"></span>
+<a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a><span class="w">    </span><span class="nt">ports</span><span class="p">:</span><span class="w"></span>
+<a id="__codelineno-2-20" name="__codelineno-2-20" href="#__codelineno-2-20"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;6080:80&quot;</span><span class="w"></span>
+<a id="__codelineno-2-21" name="__codelineno-2-21" href="#__codelineno-2-21"></a><span class="w">    </span><span class="nt">shm_size</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">512m</span><span class="w"></span>
+<a id="__codelineno-2-22" name="__codelineno-2-22" href="#__codelineno-2-22"></a><span class="w">    </span><span class="c1"># volumes: </span><span class="w"></span>
+<a id="__codelineno-2-23" name="__codelineno-2-23" href="#__codelineno-2-23"></a><span class="w">    </span><span class="c1">#   - &quot;./catkin_ws:/home/ubuntu/catkin_ws&quot;</span><span class="w"></span>
+<a id="__codelineno-2-24" name="__codelineno-2-24" href="#__codelineno-2-24"></a><span class="w">    </span><span class="c1">#   - &quot;./ros2_ws:/home/ubuntu/ros2_ws&quot;</span><span class="w"></span>
+</code></pre></div></p>
+<p>保存したら、<code>~/vnc_docker_ros/</code>上で下記コマンドで立ち上げる
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nb">cd</span> ~/vnc_docker_ros/
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>docker compose up
+</code></pre></div></p>
+<p>起動したら、ブラウザで<code>http://127.0.0.1:6080</code>にアクセスすることでDockerコンテナ内のVNCクライアントが起動する。</p>
+<h2 id="gazebo">Gazeboの動作確認</h2>
+<p>起動後は、左下角にあるアイコンをクリックし、ターミナルを開き、Gazeboを起動します。
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>gazebo
+</code></pre></div></p>
+<p>終了させるときは、動作させているターミナルで<code>ctrl+C</code></p>
+<p>コンテナを削除するには、<code>~/vnc_docker_ros/</code>上で<code>docker compose down</code></p>
+<h2 id="_1">参考ページ</h2>
+<ul>
+<li><a href="https://memoteki.net/archives/2955">ROS/ROS2のGUIをWebブラウザ経由でお手軽に試せるDockerfileを公開しました</a></li>
+</ul>
 
 
 

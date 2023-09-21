@@ -1,3 +1,27 @@
+## ロボットモデルを自作するための参考サイト
+- [nav2のSetting Up The URDFチュートリアル](https://navigation.ros.org/setup_guides/urdf/setup_urdf.html)
+- [nav2のSimulating an Odometry System using Gazeboチュートリアル](https://navigation.ros.org/setup_guides/odom/setup_odom.html#simulating-an-odometry-system-using-gazebo)
+- [nav2のSimulating Sensors using Gazeboチュートリアル](https://navigation.ros.org/setup_guides/sensors/setup_sensors.html#simulating-sensors-using-gazebo)
+
+差動2輪のロボットモデルであれば、下記のような円柱と球だけで作成することができるため、URDFの記述量も多くはなりません。  
+自作のロボットモデルであればセンサ構成等も自由に配置できるため、一度作成してみることをオススメします。
+
+![](./img/gazebo/urdf.png)
+
+![image1.png](./img/1/image1.png)
+![image2.png](./img/1/image2.png)
+![image3.png](./img/1/image3.png)
+![image4.png](./img/1/image4.png)
+![image5.png](./img/1/image5.png)
+![image6.png](./img/1/image6.png)
+![image7.png](./img/1/image7.png)
+![image8.png](./img/1/image8.png)
+![image9.png](./img/1/image9.png)
+![image10.png](./img/1/image10.png)
+![image11.png](./img/1/image11.png)
+
+
+
 ## Gazeboをroslaunchで起動する
 ros
 ```
@@ -424,3 +448,5 @@ LRFのGazeboプラグインを用いる
 差動二輪制御のプラグインを使用
 その他にもスキッドステア駆動、
 全方向移動、マニピュレータが選択可能
+
+

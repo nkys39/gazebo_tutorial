@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#ros-noetic" class="md-skip">
+        <a href="#ros2-humble" class="md-skip">
           コンテンツにスキップ
         </a>
       
@@ -198,7 +198,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../gazebo%E3%81%AE%E6%A6%82%E8%A6%81/" class="md-nav__link">
+      <a href="../gazebo%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9/" class="md-nav__link">
         Gazeboの使い方
       </a>
     </li>
@@ -234,6 +234,8 @@
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
       
+        
+      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           GazeboとROSの連携方法
@@ -250,6 +252,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -258,23 +262,70 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#ros-noetic" class="md-nav__link">
-    ROS Noeticのインストール
+  <a href="#gazebolaunch" class="md-nav__link">
+    Gazeboをlaunchで起動する
   </a>
+  
+    <nav class="md-nav" aria-label="Gazeboをlaunchで起動する">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#gazebo_launchpy" class="md-nav__link">
+    gazebo_launch.py
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    動作確認
+  <a href="#4-turtlebot3" class="md-nav__link">
+    4. ロボットをシミュレーションする(turtlebot3)
+  </a>
+  
+    <nav class="md-nav" aria-label="4. ロボットをシミュレーションする(turtlebot3)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#turtlebot3" class="md-nav__link">
+    Turtlebot3の関連サイト
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    講習会環境構築
+        
+          <li class="md-nav__item">
+  <a href="#turtlebot3_1" class="md-nav__link">
+    turtlebot3のシミュレーション環境のインストール
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#turtlebot3_2" class="md-nav__link">
+    turtlebot3のシミュレーションの起動
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#turtlebot3_gazeboempty_worldlaunchpy" class="md-nav__link">
+    turtlebot3_gazeboのempty_world.launch.pyの詳細
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#turtlebot3_3" class="md-nav__link">
+    turtlebot3のシミュレーションのノード構成
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -385,7 +436,7 @@
   
     <li class="md-nav__item">
       <a href="../gazebo_advance/" class="md-nav__link">
-        Gazeboの応用
+        Gazeboの参考ページ
       </a>
     </li>
   
@@ -408,6 +459,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -416,23 +469,70 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#ros-noetic" class="md-nav__link">
-    ROS Noeticのインストール
+  <a href="#gazebolaunch" class="md-nav__link">
+    Gazeboをlaunchで起動する
   </a>
+  
+    <nav class="md-nav" aria-label="Gazeboをlaunchで起動する">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#gazebo_launchpy" class="md-nav__link">
+    gazebo_launch.py
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    動作確認
+  <a href="#4-turtlebot3" class="md-nav__link">
+    4. ロボットをシミュレーションする(turtlebot3)
+  </a>
+  
+    <nav class="md-nav" aria-label="4. ロボットをシミュレーションする(turtlebot3)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#turtlebot3" class="md-nav__link">
+    Turtlebot3の関連サイト
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    講習会環境構築
+        
+          <li class="md-nav__item">
+  <a href="#turtlebot3_1" class="md-nav__link">
+    turtlebot3のシミュレーション環境のインストール
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#turtlebot3_2" class="md-nav__link">
+    turtlebot3のシミュレーションの起動
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#turtlebot3_gazeboempty_worldlaunchpy" class="md-nav__link">
+    turtlebot3_gazeboのempty_world.launch.pyの詳細
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#turtlebot3_3" class="md-nav__link">
+    turtlebot3のシミュレーションのノード構成
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -451,88 +551,299 @@
                   
 
 
-  <h1>GazeboとROSの連携方法</h1>
-
-<h2 id="ros-noetic">ROS Noeticのインストール</h2>
-<p>インストール手順での変更点は、aptでインストールしていたpythonがpython3になっている点のみ。
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1"># aptのリストにROSを登録</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>$ sudo sh -c <span class="s1">&#39;echo &quot;deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main&quot; &gt; /etc/apt/sources.list.d/ros-latest.list&#39;</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="c1"># ROSをaptからインストールするためのapt-keyを設定</span>
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>$ curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc <span class="p">|</span> sudo apt-key add -
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>$ sudo apt update
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>
-<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="c1"># ROS Noeticのインストール</span>
-<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>$ sudo apt install ros-noetic-desktop-full
-<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>
-<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="c1"># ROSパッケージの依存関係を整理してくれるrosdepのインストールと初期設定</span>
-<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>$ sudo apt install python3-rosdep
-<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>$ sudo rosdep init
-<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>$ rosdep update
-<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>
-<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="c1"># ROSの環境設定</span>
-<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>$ <span class="nb">echo</span> <span class="s2">&quot;source /opt/ros/noetic/setup.bash&quot;</span> &gt;&gt; ~/.bashrc
-<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>$ <span class="nb">source</span> ~/.bashrc 
-<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>
-<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a><span class="c1"># ROSパッケージのinstallが便利になるツールのインストール</span>
-<a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a>$ sudo apt install python3-rosinstall python3-rosinstall-generator python3-wstool build-essential
-<a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a>$ sudo apt-get install python3-catkin-tools
-<a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a>
-<a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a><span class="c1">#ROSワークスペースを作成し、環境設定</span>
-<a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a>$ mkdir -p ~/catkin_ws/src
-<a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a>$ <span class="nb">cd</span> ~/catkin_ws/src
-<a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a>$ catkin_init_workspace
-<a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a>$ <span class="nb">cd</span> ~/catkin_ws/
-<a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a>$ catkin_make
-<a id="__codelineno-0-30" name="__codelineno-0-30" href="#__codelineno-0-30"></a>$ <span class="nb">echo</span> <span class="s2">&quot;source ~/catkin_ws/devel/setup.bash&quot;</span> &gt;&gt; ~/.bashrc
-<a id="__codelineno-0-31" name="__codelineno-0-31" href="#__codelineno-0-31"></a>$ <span class="nb">source</span> ~/.bashrc 
+<h1 id="ros2-humble">ROS2 Humble</h1>
+<p>実行するには各種インストール方法の③でROS2Humbleの環境を作るか、ROS2Galacticにして以下の出てくるhumbleを読み替えて実行してください。</p>
+<h2 id="gazebolaunch">Gazeboをlaunchで起動する</h2>
+<p>サンプルのlaunchファイルは、<code>gazebo_rosパッケージ</code>内に<code>gzserver.launch.py</code>と<code>gzclient.launch.py</code>があります。
+<code>gzserver</code>がワールドを立ち上げるので、worldファイルを読み込ませるのは、<code>gzserver</code>になります。
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>ros2 launch gazebo_ros gzserver.launch.py world:<span class="o">=</span>worldファイルのパス
 </code></pre></div></p>
-<h2 id="_1">動作確認</h2>
-<p>下記コマンドを入力し、カメのウインドウが表示されればインストール完了
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>ROSマスタを起動
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>$ roscore
-<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>カメシミュレーターを起動
-<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>$ rosrun turtlesim turtlesim_node
-<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>カメを動かしたければ、以下を実行し、矢印キーで操作可能
-<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>$ rosrun turtlesim turtlesim_node
+<p>GUIが必要な場合は、<code>gzclient</code>を起動します。
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>ros2 launch gazebo_ros gzclient.launch.py
 </code></pre></div></p>
-<h2 id="_2">講習会環境構築</h2>
-<p><div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>sudo apt install ros-noetic-teleop-twist-joy ros-noetic-urg-node ros-noetic-ira-laser-tools ros-noetic-depthimage-to-laserscan ros-noetic-pointcloud-to-laserscan ros-noetic-gmapping ros-noetic-slam-gmapping ros-noetic-navigation ros-noetic-mrpt-navigation ros-noetic-teb-local-planner ros-noetic-xacro ros-noetic-rosbridge-suite ros-noetic-tf2-web-republisher ros-noetic-velodyne-description ros-noetic-velodyne-gazebo-plugins ros-noetic-iris-lama-ros ros-noetic-slam-toolbox ros-noetic-velodyne
+<hr />
+<h3 id="gazebo_launchpy">gazebo_launch.py</h3>
+<p>上記のlaunchをまとめたlaunchは下記になります。
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="ch">#!/usr/bin/env python3</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="c1"># coding:utf-8</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="kn">import</span> <span class="nn">os</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="kn">from</span> <span class="nn">ament_index_python.packages</span> <span class="kn">import</span> <span class="n">get_package_share_directory</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="kn">from</span> <span class="nn">launch</span> <span class="kn">import</span> <span class="n">LaunchDescription</span>
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="kn">from</span> <span class="nn">launch.actions</span> <span class="kn">import</span> <span class="n">IncludeLaunchDescription</span>
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="kn">from</span> <span class="nn">launch.launch_description_sources</span> <span class="kn">import</span> <span class="n">PythonLaunchDescriptionSource</span>
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="k">def</span> <span class="nf">generate_launch_description</span><span class="p">():</span>
+<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>    <span class="n">pkg_gazebo_ros</span> <span class="o">=</span> <span class="n">get_package_share_directory</span><span class="p">(</span><span class="s1">&#39;gazebo_ros&#39;</span><span class="p">)</span>
+<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>    <span class="n">world</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span>
+<a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a>        <span class="n">get_package_share_directory</span><span class="p">(</span><span class="s1">&#39;my_nav2_bringup&#39;</span><span class="p">),</span>
+<a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a>        <span class="s1">&#39;worlds&#39;</span><span class="p">,</span>
+<a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a>        <span class="s1">&#39;willowgarage.world&#39;</span>
+<a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a>    <span class="p">)</span>
+<a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a>    <span class="n">gzserver_cmd</span> <span class="o">=</span> <span class="n">IncludeLaunchDescription</span><span class="p">(</span>
+<a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a>        <span class="n">PythonLaunchDescriptionSource</span><span class="p">(</span>
+<a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a>            <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">pkg_gazebo_ros</span><span class="p">,</span> <span class="s1">&#39;launch&#39;</span><span class="p">,</span> <span class="s1">&#39;gzserver.launch.py&#39;</span><span class="p">)</span>
+<a id="__codelineno-2-20" name="__codelineno-2-20" href="#__codelineno-2-20"></a>        <span class="p">),</span>
+<a id="__codelineno-2-21" name="__codelineno-2-21" href="#__codelineno-2-21"></a>        <span class="n">launch_arguments</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;world&#39;</span><span class="p">:</span> <span class="n">world</span><span class="p">}</span><span class="o">.</span><span class="n">items</span><span class="p">()</span>
+<a id="__codelineno-2-22" name="__codelineno-2-22" href="#__codelineno-2-22"></a>    <span class="p">)</span>
+<a id="__codelineno-2-23" name="__codelineno-2-23" href="#__codelineno-2-23"></a>    <span class="n">gzclient_cmd</span> <span class="o">=</span> <span class="n">IncludeLaunchDescription</span><span class="p">(</span>
+<a id="__codelineno-2-24" name="__codelineno-2-24" href="#__codelineno-2-24"></a>        <span class="n">PythonLaunchDescriptionSource</span><span class="p">(</span>
+<a id="__codelineno-2-25" name="__codelineno-2-25" href="#__codelineno-2-25"></a>            <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">pkg_gazebo_ros</span><span class="p">,</span> <span class="s1">&#39;launch&#39;</span><span class="p">,</span> <span class="s1">&#39;gzclient.launch.py&#39;</span><span class="p">)</span>
+<a id="__codelineno-2-26" name="__codelineno-2-26" href="#__codelineno-2-26"></a>        <span class="p">)</span>
+<a id="__codelineno-2-27" name="__codelineno-2-27" href="#__codelineno-2-27"></a>    <span class="p">)</span>
+<a id="__codelineno-2-28" name="__codelineno-2-28" href="#__codelineno-2-28"></a>
+<a id="__codelineno-2-29" name="__codelineno-2-29" href="#__codelineno-2-29"></a>    <span class="n">ld</span> <span class="o">=</span> <span class="n">LaunchDescription</span><span class="p">()</span>
+<a id="__codelineno-2-30" name="__codelineno-2-30" href="#__codelineno-2-30"></a>    <span class="n">ld</span><span class="o">.</span><span class="n">add_action</span><span class="p">(</span><span class="n">gzserver_cmd</span><span class="p">)</span>
+<a id="__codelineno-2-31" name="__codelineno-2-31" href="#__codelineno-2-31"></a>    <span class="n">ld</span><span class="o">.</span><span class="n">add_action</span><span class="p">(</span><span class="n">gzclient_cmd</span><span class="p">)</span>
+<a id="__codelineno-2-32" name="__codelineno-2-32" href="#__codelineno-2-32"></a>    <span class="k">return</span> <span class="n">ld</span>
+</code></pre></div></p>
+<hr />
+<h2 id="4-turtlebot3">4. ロボットをシミュレーションする(turtlebot3)</h2>
+<p><img alt="turtlebot3.png" src="../img/gazebo/turtlebot3.png" /></p>
+<p>次にGazeboでロボットをシミュレーションしてみます。</p>
+<ul>
+<li>ROS2の自律走行メタパッケージ<code>navigation2(nav2)</code>のチュートリアルではROBOTIS社のturtlebot3というロボットが使用されています。</li>
+<li>turtlebot3ではgazeboのモデルが用意されているためこれを使ってロボットをシミュレーションしてみましょう。</li>
+<li>turtlebot3には3種類のモデルがありますが、今回はwaffleを使用します。</li>
+</ul>
+<hr />
+<h3 id="turtlebot3">Turtlebot3の関連サイト</h3>
+<ul>
+<li><a href="https://www.turtlebot.com/">turtlebot</a></li>
+<li><a href="https://emanual.robotis.com/docs/en/platform/turtlebot3/quick-start/">ROBOTIS e-Manual: turtlebot3/Quick Start Guide</a></li>
+<li><a href="https://emanual.robotis.com/docs/en/platform/turtlebot3/simulation/">ROBOTIS e-Manual: turtlebot3/Simulation</a></li>
+</ul>
+<hr />
+<h3 id="turtlebot3_1">turtlebot3のシミュレーション環境のインストール</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c1"># aptでturtlebot3のシミュレーションとnav2関連のインストール</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>sudo apt -y install ros-humble-gazebo-* ros-humble-cartographer ros-humble-cartographer-ros ros-humble-navigation2 ros-humble-nav2-bringup
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>sudo apt -y install ros-humble-dynamixel-sdk ros-humble-turtlebot3-msgs ros-humble-turtlebot3 ros-humble-turtlebot3-simulations
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="c1"># ~/.bashrcにTURTLEBOT3の使用するモデルを選択する設定を追加(端末起動に読み込まれる)(burger,waffle,waffle_piから選択可能)</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="nb">echo</span> <span class="s2">&quot;export TURTLEBOT3_MODEL=waffle&quot;</span> &gt;&gt; ~/.bashrc
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="c1"># ~/.bashrcにTURTLEBOT3のシミュレーションモデルをGazeboに読み込む設定を追加(端末起動に読み込まれる)</span>
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="nb">echo</span> <span class="s2">&quot;export GAZEBO_MODEL_PATH=</span><span class="nv">$GAZEBO_MODEL_PATH</span><span class="s2">:/opt/ros/humble/share/turtlebot3_gazebo/models&quot;</span> &gt;&gt; ~/.bashrc
 </code></pre></div>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c1"># コントローラ</span>
-<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>sudo apt install ros-noetic-teleop-twist-joy
-<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="c1"># LRF</span>
-<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>sudo apt install ros-noetic-urg-node 
-<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="c1"># LRFマージ</span>
-<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>sudo apt install ros-noetic-ira-laser-tools 
-<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="c1"># realsense-LRF変換</span>
-<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>sudo apt install ros-noetic-depthimage-to-laserscan 
-<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>sudo apt install ros-noetic-pointcloud-to-laserscan 
-<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="c1"># Gmapping:</span>
-<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>sudo apt install ros-noetic-gmapping 
-<a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a>sudo apt install ros-noetic-slam-gmapping 
-<a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a><span class="c1"># navigation(map_server+amcl+move_base)</span>
-<a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a>sudo apt install ros-noetic-navigation
-<a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a><span class="c1"># mrpt自己位置推定</span>
-<a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a>sudo apt install ros-noetic-mrpt-navigation 
-<a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a><span class="c1"># move_baseの走行制御プラグイン(teb_local_planner)</span>
-<a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a>sudo apt install ros-noetic-teb-local-planner 
-<a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a><span class="c1"># ロボットシミュレータ読込用</span>
-<a id="__codelineno-3-20" name="__codelineno-3-20" href="#__codelineno-3-20"></a>sudo apt install ros-noetic-xacro 
-<a id="__codelineno-3-21" name="__codelineno-3-21" href="#__codelineno-3-21"></a><span class="c1"># roslibjsとの接続(rosbridge_server)</span>
-<a id="__codelineno-3-22" name="__codelineno-3-22" href="#__codelineno-3-22"></a>sudo apt install ros-noetic-rosbridge-suite 
-<a id="__codelineno-3-23" name="__codelineno-3-23" href="#__codelineno-3-23"></a><span class="c1"># roslibjs上でtfを扱う(tf2_web_republisher)</span>
-<a id="__codelineno-3-24" name="__codelineno-3-24" href="#__codelineno-3-24"></a>sudo apt install ros-noetic-tf2-web-republisher 
-<a id="__codelineno-3-25" name="__codelineno-3-25" href="#__codelineno-3-25"></a><span class="c1"># gazebo上でのvelodyneシミュレーション</span>
-<a id="__codelineno-3-26" name="__codelineno-3-26" href="#__codelineno-3-26"></a>sudo apt install ros-noetic-velodyne-description 
-<a id="__codelineno-3-27" name="__codelineno-3-27" href="#__codelineno-3-27"></a>sudo apt install ros-noetic-velodyne-gazebo-plugins 
-<a id="__codelineno-3-28" name="__codelineno-3-28" href="#__codelineno-3-28"></a><span class="c1"># iris_lama</span>
-<a id="__codelineno-3-29" name="__codelineno-3-29" href="#__codelineno-3-29"></a>sudo apt install ros-noetic-iris-lama-ros 
-<a id="__codelineno-3-30" name="__codelineno-3-30" href="#__codelineno-3-30"></a><span class="c1"># slam_toolbox</span>
-<a id="__codelineno-3-31" name="__codelineno-3-31" href="#__codelineno-3-31"></a>sudo apt install ros-noetic-slam-toolbox
-<a id="__codelineno-3-32" name="__codelineno-3-32" href="#__codelineno-3-32"></a><span class="c1"># velodyneドライバー</span>
-<a id="__codelineno-3-33" name="__codelineno-3-33" href="#__codelineno-3-33"></a>sudo apt install ros-noetic-velodyne
+<hr />
+<h3 id="turtlebot3_2">turtlebot3のシミュレーションの起動</h3>
+<ul>
+<li>turtlebot3関連のパッケージはたくさんありますが、シミュレーションを行うパッケージは、<code>turtlebot3_gazebo</code>になります。</li>
+<li>
+<p>Gazeboのworld環境は下記が用意されています。</p>
+<ul>
+<li>empty_world.world (何もない)</li>
+<li>turtlebot3_world.world (正六角形の中に1m間隔で9個の円柱)</li>
+<li>turtlebot3_house.world (模擬住宅環境)</li>
+<li>turtlebot3_dqn_stage1.world (5m四方の枠)</li>
+<li>turtlebot3_dqn_stage2.world (5m四方の枠と4個の円柱)</li>
+<li>turtlebot3_dqn_stage3.world (5m四方の枠と4個の円柱)</li>
+<li>turtlebot3_dqn_stage4.world (5m四方の枠内に壁が設置)</li>
+</ul>
+</li>
+<li>
+<p>今回は<code>empty_world.world</code>を使用するため、launchコマンドで<code>empty_world.launch.py</code>を呼び出します。
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>ros2 launch turtlebot3_gazebo empty_world.launch.py
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="c1"># teleop_twist_keyboardで速度指令値を送信し動かしてみる</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>ros2 run teleop_twist_keyboard teleop_twist_keyboard
 </code></pre></div></p>
+</li>
+<li>Gazeboが起動し、turtlebot3のwaffleモデルが表示されます。</li>
+<li>turtlebot3のwaffleモデルは<code>/cmd_velトピック</code>で動作する差動2輪駆動型のロボットになるため、筐体の横に円柱のタイヤが2個ついています。</li>
+<li>青い円のように見えているものがLaserScanシミュレーション、白い三角柱のように見えているものがカメラシミュレーションになります。</li>
+</ul>
+<p><img alt="turtlebot3_gazebo_empty_world.png" src="../img/gazebo/turtlebot3_gazebo_empty_world.png" />
+<img alt="turtlebot3_gazebo_empty_world2.png" src="../img/gazebo/turtlebot3_gazebo_empty_world2.png" /></p>
+<hr />
+<h3 id="turtlebot3_gazeboempty_worldlaunchpy"><code>turtlebot3_gazebo</code>の<code>empty_world.launch.py</code>の詳細</h3>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">empty_world.launch.py</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-5-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-5-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-5-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-5-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-5-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-5-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-5-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-5-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-5-10">10</a></span>
+<span class="normal"><a href="#__codelineno-5-11">11</a></span>
+<span class="normal"><a href="#__codelineno-5-12">12</a></span>
+<span class="normal"><a href="#__codelineno-5-13">13</a></span>
+<span class="normal"><a href="#__codelineno-5-14">14</a></span>
+<span class="normal"><a href="#__codelineno-5-15">15</a></span>
+<span class="normal"><a href="#__codelineno-5-16">16</a></span>
+<span class="normal"><a href="#__codelineno-5-17">17</a></span>
+<span class="normal"><a href="#__codelineno-5-18">18</a></span>
+<span class="normal"><a href="#__codelineno-5-19">19</a></span>
+<span class="normal"><a href="#__codelineno-5-20">20</a></span>
+<span class="normal"><a href="#__codelineno-5-21">21</a></span>
+<span class="normal"><a href="#__codelineno-5-22">22</a></span>
+<span class="normal"><a href="#__codelineno-5-23">23</a></span>
+<span class="normal"><a href="#__codelineno-5-24">24</a></span>
+<span class="normal"><a href="#__codelineno-5-25">25</a></span>
+<span class="normal"><a href="#__codelineno-5-26">26</a></span>
+<span class="normal"><a href="#__codelineno-5-27">27</a></span>
+<span class="normal"><a href="#__codelineno-5-28">28</a></span>
+<span class="normal"><a href="#__codelineno-5-29">29</a></span>
+<span class="normal"><a href="#__codelineno-5-30">30</a></span>
+<span class="normal"><a href="#__codelineno-5-31">31</a></span>
+<span class="normal"><a href="#__codelineno-5-32">32</a></span>
+<span class="normal"><a href="#__codelineno-5-33">33</a></span>
+<span class="normal"><a href="#__codelineno-5-34">34</a></span>
+<span class="normal"><a href="#__codelineno-5-35">35</a></span>
+<span class="normal"><a href="#__codelineno-5-36">36</a></span>
+<span class="normal"><a href="#__codelineno-5-37">37</a></span>
+<span class="normal"><a href="#__codelineno-5-38">38</a></span>
+<span class="normal"><a href="#__codelineno-5-39">39</a></span>
+<span class="normal"><a href="#__codelineno-5-40">40</a></span>
+<span class="normal"><a href="#__codelineno-5-41">41</a></span>
+<span class="normal"><a href="#__codelineno-5-42">42</a></span>
+<span class="normal"><a href="#__codelineno-5-43">43</a></span>
+<span class="normal"><a href="#__codelineno-5-44">44</a></span>
+<span class="normal"><a href="#__codelineno-5-45">45</a></span>
+<span class="normal"><a href="#__codelineno-5-46">46</a></span>
+<span class="normal"><a href="#__codelineno-5-47">47</a></span>
+<span class="normal"><a href="#__codelineno-5-48">48</a></span>
+<span class="normal"><a href="#__codelineno-5-49">49</a></span>
+<span class="normal"><a href="#__codelineno-5-50">50</a></span>
+<span class="normal"><a href="#__codelineno-5-51">51</a></span>
+<span class="normal"><a href="#__codelineno-5-52">52</a></span>
+<span class="normal"><a href="#__codelineno-5-53">53</a></span>
+<span class="normal"><a href="#__codelineno-5-54">54</a></span>
+<span class="normal"><a href="#__codelineno-5-55">55</a></span>
+<span class="normal"><a href="#__codelineno-5-56">56</a></span>
+<span class="normal"><a href="#__codelineno-5-57">57</a></span>
+<span class="normal"><a href="#__codelineno-5-58">58</a></span>
+<span class="normal"><a href="#__codelineno-5-59">59</a></span>
+<span class="normal"><a href="#__codelineno-5-60">60</a></span>
+<span class="normal"><a href="#__codelineno-5-61">61</a></span>
+<span class="normal"><a href="#__codelineno-5-62">62</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1"></a><span class="kn">import</span> <span class="nn">os</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2"></a>
+<a id="__codelineno-5-3" name="__codelineno-5-3"></a><span class="kn">from</span> <span class="nn">ament_index_python.packages</span> <span class="kn">import</span> <span class="n">get_package_share_directory</span>
+<a id="__codelineno-5-4" name="__codelineno-5-4"></a><span class="kn">from</span> <span class="nn">launch</span> <span class="kn">import</span> <span class="n">LaunchDescription</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5"></a><span class="kn">from</span> <span class="nn">launch.actions</span> <span class="kn">import</span> <span class="n">IncludeLaunchDescription</span>
+<a id="__codelineno-5-6" name="__codelineno-5-6"></a><span class="kn">from</span> <span class="nn">launch.launch_description_sources</span> <span class="kn">import</span> <span class="n">PythonLaunchDescriptionSource</span>
+<a id="__codelineno-5-7" name="__codelineno-5-7"></a><span class="kn">from</span> <span class="nn">launch.substitutions</span> <span class="kn">import</span> <span class="n">LaunchConfiguration</span>
+<a id="__codelineno-5-8" name="__codelineno-5-8"></a>
+<a id="__codelineno-5-9" name="__codelineno-5-9"></a>
+<a id="__codelineno-5-10" name="__codelineno-5-10"></a><span class="k">def</span> <span class="nf">generate_launch_description</span><span class="p">():</span>
+<a id="__codelineno-5-11" name="__codelineno-5-11"></a>    <span class="n">launch_file_dir</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">get_package_share_directory</span><span class="p">(</span><span class="s1">&#39;turtlebot3_gazebo&#39;</span><span class="p">),</span> <span class="s1">&#39;launch&#39;</span><span class="p">)</span>
+<a id="__codelineno-5-12" name="__codelineno-5-12"></a>    <span class="n">pkg_gazebo_ros</span> <span class="o">=</span> <span class="n">get_package_share_directory</span><span class="p">(</span><span class="s1">&#39;gazebo_ros&#39;</span><span class="p">)</span>
+<a id="__codelineno-5-13" name="__codelineno-5-13"></a>
+<a id="__codelineno-5-14" name="__codelineno-5-14"></a>    <span class="n">use_sim_time</span> <span class="o">=</span> <span class="n">LaunchConfiguration</span><span class="p">(</span><span class="s1">&#39;use_sim_time&#39;</span><span class="p">,</span> <span class="n">default</span><span class="o">=</span><span class="s1">&#39;true&#39;</span><span class="p">)</span>
+<a id="__codelineno-5-15" name="__codelineno-5-15"></a>    <span class="n">x_pose</span> <span class="o">=</span> <span class="n">LaunchConfiguration</span><span class="p">(</span><span class="s1">&#39;x_pose&#39;</span><span class="p">,</span> <span class="n">default</span><span class="o">=</span><span class="s1">&#39;0.0&#39;</span><span class="p">)</span>
+<a id="__codelineno-5-16" name="__codelineno-5-16"></a>    <span class="n">y_pose</span> <span class="o">=</span> <span class="n">LaunchConfiguration</span><span class="p">(</span><span class="s1">&#39;y_pose&#39;</span><span class="p">,</span> <span class="n">default</span><span class="o">=</span><span class="s1">&#39;0.0&#39;</span><span class="p">)</span>
+<a id="__codelineno-5-17" name="__codelineno-5-17"></a>
+<a id="__codelineno-5-18" name="__codelineno-5-18"></a>    <span class="n">world</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span>
+<a id="__codelineno-5-19" name="__codelineno-5-19"></a>        <span class="n">get_package_share_directory</span><span class="p">(</span><span class="s1">&#39;turtlebot3_gazebo&#39;</span><span class="p">),</span>
+<a id="__codelineno-5-20" name="__codelineno-5-20"></a>        <span class="s1">&#39;worlds&#39;</span><span class="p">,</span>
+<a id="__codelineno-5-21" name="__codelineno-5-21"></a>        <span class="s1">&#39;empty_world.world&#39;</span>
+<a id="__codelineno-5-22" name="__codelineno-5-22"></a>    <span class="p">)</span>
+<a id="__codelineno-5-23" name="__codelineno-5-23"></a>
+<a id="__codelineno-5-24" name="__codelineno-5-24"></a>    <span class="n">gzserver_cmd</span> <span class="o">=</span> <span class="n">IncludeLaunchDescription</span><span class="p">(</span>
+<a id="__codelineno-5-25" name="__codelineno-5-25"></a>        <span class="n">PythonLaunchDescriptionSource</span><span class="p">(</span>
+<a id="__codelineno-5-26" name="__codelineno-5-26"></a>            <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">pkg_gazebo_ros</span><span class="p">,</span> <span class="s1">&#39;launch&#39;</span><span class="p">,</span> <span class="s1">&#39;gzserver.launch.py&#39;</span><span class="p">)</span>
+<a id="__codelineno-5-27" name="__codelineno-5-27"></a>        <span class="p">),</span>
+<a id="__codelineno-5-28" name="__codelineno-5-28"></a>        <span class="n">launch_arguments</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;world&#39;</span><span class="p">:</span> <span class="n">world</span><span class="p">}</span><span class="o">.</span><span class="n">items</span><span class="p">()</span>
+<a id="__codelineno-5-29" name="__codelineno-5-29"></a>    <span class="p">)</span>
+<a id="__codelineno-5-30" name="__codelineno-5-30"></a>
+<a id="__codelineno-5-31" name="__codelineno-5-31"></a>    <span class="n">gzclient_cmd</span> <span class="o">=</span> <span class="n">IncludeLaunchDescription</span><span class="p">(</span>
+<a id="__codelineno-5-32" name="__codelineno-5-32"></a>        <span class="n">PythonLaunchDescriptionSource</span><span class="p">(</span>
+<a id="__codelineno-5-33" name="__codelineno-5-33"></a>            <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">pkg_gazebo_ros</span><span class="p">,</span> <span class="s1">&#39;launch&#39;</span><span class="p">,</span> <span class="s1">&#39;gzclient.launch.py&#39;</span><span class="p">)</span>
+<a id="__codelineno-5-34" name="__codelineno-5-34"></a>        <span class="p">)</span>
+<a id="__codelineno-5-35" name="__codelineno-5-35"></a>    <span class="p">)</span>
+<a id="__codelineno-5-36" name="__codelineno-5-36"></a>
+<a id="__codelineno-5-37" name="__codelineno-5-37"></a>    <span class="n">robot_state_publisher_cmd</span> <span class="o">=</span> <span class="n">IncludeLaunchDescription</span><span class="p">(</span>
+<a id="__codelineno-5-38" name="__codelineno-5-38"></a>        <span class="n">PythonLaunchDescriptionSource</span><span class="p">(</span>
+<a id="__codelineno-5-39" name="__codelineno-5-39"></a>            <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">launch_file_dir</span><span class="p">,</span> <span class="s1">&#39;robot_state_publisher.launch.py&#39;</span><span class="p">)</span>
+<a id="__codelineno-5-40" name="__codelineno-5-40"></a>        <span class="p">),</span>
+<a id="__codelineno-5-41" name="__codelineno-5-41"></a>        <span class="n">launch_arguments</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;use_sim_time&#39;</span><span class="p">:</span> <span class="n">use_sim_time</span><span class="p">}</span><span class="o">.</span><span class="n">items</span><span class="p">()</span>
+<a id="__codelineno-5-42" name="__codelineno-5-42"></a>    <span class="p">)</span>
+<a id="__codelineno-5-43" name="__codelineno-5-43"></a>
+<a id="__codelineno-5-44" name="__codelineno-5-44"></a>    <span class="n">spawn_turtlebot_cmd</span> <span class="o">=</span> <span class="n">IncludeLaunchDescription</span><span class="p">(</span>
+<a id="__codelineno-5-45" name="__codelineno-5-45"></a>        <span class="n">PythonLaunchDescriptionSource</span><span class="p">(</span>
+<a id="__codelineno-5-46" name="__codelineno-5-46"></a>            <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">launch_file_dir</span><span class="p">,</span> <span class="s1">&#39;spawn_turtlebot3.launch.py&#39;</span><span class="p">)</span>
+<a id="__codelineno-5-47" name="__codelineno-5-47"></a>        <span class="p">),</span>
+<a id="__codelineno-5-48" name="__codelineno-5-48"></a>        <span class="n">launch_arguments</span><span class="o">=</span><span class="p">{</span>
+<a id="__codelineno-5-49" name="__codelineno-5-49"></a>            <span class="s1">&#39;x_pose&#39;</span><span class="p">:</span> <span class="n">x_pose</span><span class="p">,</span>
+<a id="__codelineno-5-50" name="__codelineno-5-50"></a>            <span class="s1">&#39;y_pose&#39;</span><span class="p">:</span> <span class="n">y_pose</span>
+<a id="__codelineno-5-51" name="__codelineno-5-51"></a>        <span class="p">}</span><span class="o">.</span><span class="n">items</span><span class="p">()</span>
+<a id="__codelineno-5-52" name="__codelineno-5-52"></a>    <span class="p">)</span>
+<a id="__codelineno-5-53" name="__codelineno-5-53"></a>
+<a id="__codelineno-5-54" name="__codelineno-5-54"></a>    <span class="n">ld</span> <span class="o">=</span> <span class="n">LaunchDescription</span><span class="p">()</span>
+<a id="__codelineno-5-55" name="__codelineno-5-55"></a>
+<a id="__codelineno-5-56" name="__codelineno-5-56"></a>    <span class="c1"># Add the commands to the launch description</span>
+<a id="__codelineno-5-57" name="__codelineno-5-57"></a>    <span class="n">ld</span><span class="o">.</span><span class="n">add_action</span><span class="p">(</span><span class="n">gzserver_cmd</span><span class="p">)</span>
+<a id="__codelineno-5-58" name="__codelineno-5-58"></a>    <span class="n">ld</span><span class="o">.</span><span class="n">add_action</span><span class="p">(</span><span class="n">gzclient_cmd</span><span class="p">)</span>
+<a id="__codelineno-5-59" name="__codelineno-5-59"></a>    <span class="n">ld</span><span class="o">.</span><span class="n">add_action</span><span class="p">(</span><span class="n">robot_state_publisher_cmd</span><span class="p">)</span>
+<a id="__codelineno-5-60" name="__codelineno-5-60"></a>    <span class="n">ld</span><span class="o">.</span><span class="n">add_action</span><span class="p">(</span><span class="n">spawn_turtlebot_cmd</span><span class="p">)</span>
+<a id="__codelineno-5-61" name="__codelineno-5-61"></a>
+<a id="__codelineno-5-62" name="__codelineno-5-62"></a>    <span class="k">return</span> <span class="n">ld</span>
+</code></pre></div></td></tr></table></div>
+<ul>
+<li><code>empty_world.launch.py</code>では、<code>gzserver</code>,<code>gzclient</code>の他に以下の2個のlaunchファイルを呼び出し、2個のノードを起動しています。</li>
+<li><code>robot_state_publisher.launch.py</code><ul>
+<li>パッケージ名:<code>robot_state_publisher</code></li>
+<li>ノード名:<code>robot_state_publisher</code></li>
+<li>urdfファイル読込、静的位置関係の<code>/tf_staticトピック</code>とrviz上にロボットモデルを表示するための<code>/robot_descriptionトピック</code>を出力</li>
+<li><code>/joint_statesトピック</code>(今回はタイヤの回転状態)をサブスクライブし動的位置関係の<code>/tfトピック</code>を出力</li>
+<li>urdfファイルパス:<code>/opt/ros/humble/share/turtlebot3_gazebo/urdf/turtlebot3_waffle.urdf</code></li>
+</ul>
+</li>
+<li><code>spawn_turtlebot3.launch.py</code><ul>
+<li>パッケージ名:<code>gazebo</code></li>
+<li>ノード名:<code>spawn_entity.py</code></li>
+<li>sdfファイル(urdfファイル)を読込、gazebo上にturtlebot3のwaffleモデルを配置し、ノードを終了</li>
+<li>sdfファイルパス:<code>/opt/ros/humble/share/turtlebot3_gazebo/models/turtlebot3_waffle/model.sdf</code></li>
+</ul>
+</li>
+<li>turtlebot3のwaffleモデルには、筐体モデルの他に差動2輪制御コントローラや複数のセンサシミュレーションのgazebo_pluginsが記述され、ROS2ノードとして動作しています。(<code>ros2 node list</code>で確認できます)</li>
+<li>差動2輪制御コントローラ<ul>
+<li>ノード名:<code>/turtlebot3_diff_drive</code></li>
+<li>gazeboプラグイン名:<code>libgazebo_ros_diff_drive.so</code></li>
+</ul>
+</li>
+<li>車輪の回転状態シミュレーション<ul>
+<li>ノード名:<code>/turtlebot3_joint_state</code></li>
+<li>gazeboプラグイン名:<code>libgazebo_ros_joint_state_publisher.so</code></li>
+</ul>
+</li>
+<li>2DLiDARシミュレーション<ul>
+<li>ノード名:<code>/turtlebot3_laserscan</code></li>
+<li>gazeboプラグイン名:<code>libgazebo_ros_ray_sensor.so</code></li>
+</ul>
+</li>
+<li>カメラシミュレーション<ul>
+<li>ノード名:<code>/camera_driver</code></li>
+<li>gazeboプラグイン名:<code>libgazebo_ros_camera.so</code></li>
+</ul>
+</li>
+<li>IMUシミュレーション<ul>
+<li>ノード名:<code>/turtlebot3_imu</code></li>
+<li>gazeboプラグイン名:<code>libgazebo_ros_imu_sensor.so</code></li>
+</ul>
+</li>
+<li>gazeboプラグインの種類に関してはgazeboのチュートリアルページやgazebo_pluginsのgithubの実装で確認できます。</li>
+<li><a href="https://classic.gazebosim.org/tutorials?cat=connect_ros">gazeboのチュートリアルページ</a></li>
+<li><a href="https://github.com/ros-simulation/gazebo_ros_pkgs/tree/galactic/gazebo_plugins/src">gazebo_ros_pkgsのgazebo_plugins</a></li>
+</ul>
+<hr />
+<h3 id="turtlebot3_3">turtlebot3のシミュレーションのノード構成</h3>
+<p>現在の状態は下記の図のようになります。(講習会ではあまり使用しないためカメラとIMUのシミュレーションは図から省略しています)</p>
+<p><img alt="turtlebot3_gazebo.drawio.png" src="../img/gazebo/turtlebot3_gazebo.drawio.png" /></p>
+<ul>
+<li>図の赤枠部分が自律走行を行っていく上で重要な部分になります。</li>
+<li>入力部分(サブスクライバ)は<code>/cmd_velトピック</code>となっているため、【1章】で行った速度指令値出力で動かすことができます。</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="c1"># ros2 topic pubコマンドの場合</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>ros2 topic pub --once /cmd_vel geometry_msgs/msg/Twist <span class="s2">&quot;{linear: {x: 0.25, y: 0.0, z: 0.0}, angular: {x: 0.0, y: 0.0, z: 0.5}}&quot;</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="c1"># teleop_twist_keyboardの場合</span>
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>ros2 run teleop_twist_keyboard teleop_twist_keyboard 
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>
+<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="c1"># joy + teleop_twist_joyの場合</span>
+<a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a>ros2 run joy joy_node
+<a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a>ros2 run teleop_twist_joy teleop_node 
+</code></pre></div>
+<hr />
 
 
 

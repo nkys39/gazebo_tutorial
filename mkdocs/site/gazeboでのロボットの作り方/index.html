@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#gazeboroslaunch" class="md-skip">
+        <a href="#_1" class="md-skip">
           コンテンツにスキップ
         </a>
       
@@ -198,7 +198,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../gazebo%E3%81%AE%E6%A6%82%E8%A6%81/" class="md-nav__link">
+      <a href="../gazebo%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9/" class="md-nav__link">
         Gazeboの使い方
       </a>
     </li>
@@ -243,6 +243,13 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    ロボットモデルを自作するための参考サイト
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#gazeboroslaunch" class="md-nav__link">
     Gazeboをroslaunchで起動する
   </a>
@@ -250,7 +257,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#_2" class="md-nav__link">
     シミュレータ上でロボットを動かす
   </a>
   
@@ -299,7 +306,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#_3" class="md-nav__link">
     イナーシャ(慣性モーメント)について
   </a>
   
@@ -327,7 +334,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#_4" class="md-nav__link">
     とについて
   </a>
   
@@ -455,7 +462,7 @@
   
     <li class="md-nav__item">
       <a href="../gazebo_advance/" class="md-nav__link">
-        Gazeboの応用
+        Gazeboの参考ページ
       </a>
     </li>
   
@@ -486,6 +493,13 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    ロボットモデルを自作するための参考サイト
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#gazeboroslaunch" class="md-nav__link">
     Gazeboをroslaunchで起動する
   </a>
@@ -493,7 +507,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#_2" class="md-nav__link">
     シミュレータ上でロボットを動かす
   </a>
   
@@ -542,7 +556,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#_3" class="md-nav__link">
     イナーシャ(慣性モーメント)について
   </a>
   
@@ -570,7 +584,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#_4" class="md-nav__link">
     とについて
   </a>
   
@@ -593,6 +607,26 @@
 
   <h1>Gazeboでのロボットの作り方</h1>
 
+<h2 id="_1">ロボットモデルを自作するための参考サイト</h2>
+<ul>
+<li><a href="https://navigation.ros.org/setup_guides/urdf/setup_urdf.html">nav2のSetting Up The URDFチュートリアル</a></li>
+<li><a href="https://navigation.ros.org/setup_guides/odom/setup_odom.html#simulating-an-odometry-system-using-gazebo">nav2のSimulating an Odometry System using Gazeboチュートリアル</a></li>
+<li><a href="https://navigation.ros.org/setup_guides/sensors/setup_sensors.html#simulating-sensors-using-gazebo">nav2のSimulating Sensors using Gazeboチュートリアル</a></li>
+</ul>
+<p>差動2輪のロボットモデルであれば、下記のような円柱と球だけで作成することができるため、URDFの記述量も多くはなりません。<br />
+自作のロボットモデルであればセンサ構成等も自由に配置できるため、一度作成してみることをオススメします。</p>
+<p><img alt="" src="../img/gazebo/urdf.png" /></p>
+<p><img alt="image1.png" src="../img/1/image1.png" />
+<img alt="image2.png" src="../img/1/image2.png" />
+<img alt="image3.png" src="../img/1/image3.png" />
+<img alt="image4.png" src="../img/1/image4.png" />
+<img alt="image5.png" src="../img/1/image5.png" />
+<img alt="image6.png" src="../img/1/image6.png" />
+<img alt="image7.png" src="../img/1/image7.png" />
+<img alt="image8.png" src="../img/1/image8.png" />
+<img alt="image9.png" src="../img/1/image9.png" />
+<img alt="image10.png" src="../img/1/image10.png" />
+<img alt="image11.png" src="../img/1/image11.png" /></p>
 <h2 id="gazeboroslaunch">Gazeboをroslaunchで起動する</h2>
 <p>ros
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>&lt;?xml version=&quot;1.0&quot;?&gt;
@@ -607,7 +641,7 @@
 <a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>    &lt;/include&gt;
 <a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>&lt;/launch&gt;
 </code></pre></div></p>
-<h2 id="_1">シミュレータ上でロボットを動かす</h2>
+<h2 id="_2">シミュレータ上でロボットを動かす</h2>
 <h2 id="urdf">URDFを用いてシンプルなモデルを出現させる</h2>
 <p>URDF(Unified Robot Description Format)とは
 LinkとJointで構成されたロボットの構造を記述するためのXMLのフォーマット。
@@ -720,7 +754,7 @@ inertia.xacro
 simple_model.gazebo.xacro
 simple_model.urdf.xacro
 simple_model_gazebo.launch</p>
-<h2 id="_2">イナーシャ(慣性モーメント)について</h2>
+<h2 id="_3">イナーシャ(慣性モーメント)について</h2>
 <p>イナーシャは慣性モーメントとも呼ばれ、回転の運動において「重さ」に相当するもの。重さ（mass）は1次元だが、イナーシャは回転方向も考慮した値で6次元の値になる。</p>
 <p>正確な値はCADなどを用いる必要があるが、大体の近似値になる値の出し方があります。</p>
 <p>(D:長さ[m]、M:重さ[kg])</p>
@@ -833,7 +867,7 @@ simple_model_gazebo.launch</p>
 <a id="__codelineno-6-51" name="__codelineno-6-51" href="#__codelineno-6-51"></a> <span class="nt">&lt;/link&gt;</span>
 <a id="__codelineno-6-52" name="__codelineno-6-52" href="#__codelineno-6-52"></a> <span class="nt">&lt;/robot&gt;</span>
 </code></pre></div>
-<h2 id="_3"><Inertial>と<collision>について</h2>
+<h2 id="_4"><Inertial>と<collision>について</h2>
 <p><inertial>タグ
 <inertial>タグは重さに関するパラメーターを設定する。</p>
 <math>は重さでkg単位
@@ -998,7 +1032,7 @@ LRFのGazeboプラグインを用いる
     <nav class="md-footer__inner md-grid" aria-label="フッター" >
       
         
-        <a href="../gazebo%E3%81%AE%E6%A6%82%E8%A6%81/" class="md-footer__link md-footer__link--prev" aria-label="前: Gazeboの使い方" rel="prev">
+        <a href="../gazebo%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9/" class="md-footer__link md-footer__link--prev" aria-label="前: Gazeboの使い方" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>

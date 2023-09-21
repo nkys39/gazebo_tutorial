@@ -13,7 +13,7 @@
     
     
       
-        <title>Gazeboの応用 - My Docs</title>
+        <title>Gazeboの参考ページ - My Docs</title>
       
     
     
@@ -95,7 +95,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Gazeboの応用
+              Gazeboの参考ページ
             
           </span>
         </div>
@@ -198,7 +198,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../gazebo%E3%81%AE%E6%A6%82%E8%A6%81/" class="md-nav__link">
+      <a href="../gazebo%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9/" class="md-nav__link">
         Gazeboの使い方
       </a>
     </li>
@@ -343,12 +343,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Gazeboの応用
+          Gazeboの参考ページ
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        Gazeboの応用
+        Gazeboの参考ページ
       </a>
       
         
@@ -367,14 +367,28 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    他のロボット
+  <a href="#world" class="md-nav__link">
+    world作り
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#robot" class="md-nav__link">
+    robot作り
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rosros2" class="md-nav__link">
+    ROS/ROS2連携した色々なロボットのシミュレーション
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
     自律走行関連
   </a>
   
@@ -415,14 +429,28 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    他のロボット
+  <a href="#world" class="md-nav__link">
+    world作り
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#robot" class="md-nav__link">
+    robot作り
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rosros2" class="md-nav__link">
+    ROS/ROS2連携した色々なロボットのシミュレーション
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
     自律走行関連
   </a>
   
@@ -443,102 +471,75 @@
                   
 
 
-<h1 id="gazebo">Gazeboの応用例</h1>
-<h2 id="_1">他のロボット</h2>
-<h2 id="_2">自律走行関連</h2>
-<p><a href="https://qiita.com/BEIKE/items/825e62bbd8d92b6d347e">qiita_@BEIKE_2次元地図からGazeboのmodelを作ってナビゲーションしてみた</a></p>
-<h1 id="gazebo_1">Gazeboのチュートリアル作成</h1>
-<h2 id="web">静的Webページ構築</h2>
-<p>下記を用いて静的Webページを構築した。<a href="https://nkys39.github.io/gazebo_tutorial/">ページはこちら</a>
-- GitHub Pages
-- material for docs</p>
-<h2 id="_3">参考サイト</h2>
+<h1 id="gazebo">Gazeboの参考ページ</h1>
+<h2 id="world">world作り</h2>
 <ul>
-<li><a href="https://qiita.com/B-SKY-Lab/items/c519e5bc9a37b3805fd0#docker%E3%82%B3%E3%83%B3%E3%83%86%E3%83%8A%E5%86%85%E3%81%8B%E3%82%89%E3%81%AEopengl%E3%81%AE%E5%91%BC%E3%81%B3%E5%87%BA%E3%81%97%E7%A2%BA%E8%AA%8D">qiita_M1 MacでもROSでgazeboとUSBデバイスを全部使いたい！</a></li>
-<li><a href="https://classic.gazebosim.org/tutorials?cat=guided_a">Gazebo-Classic本家チュートリアル</a></li>
-<li><a href="https://brew.sh/ja/">Homebrew</a></li>
-<li>https://gazebosim.org/docs/harmonic/releases</li>
-<li>https://dev.classmethod.jp/articles/reinvent_robotics_gazebo/</li>
-<li>https://discourse.ros.org/t/ros-gui-on-macbook-air-m1-chip/27205</li>
-<li>https://github.com/HarvestX/h6x-Internship/tree/main</li>
-<li>https://note.com/npaka/n/ncfc333ddf20e</li>
-<li>https://qiita.com/srs/items/49b8512e29bdef0ebcd6</li>
-<li>https://qiita.com/srs/items/5f44440afea0eb616b4a#%E3%82%B7%E3%83%9F%E3%83%A5%E3%83%AC%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E5%9F%BA%E7%A4%8E%E7%B7%A8</li>
+<li><a href="https://classic.gazebosim.org/tutorials?tut=static_map_plugin&amp;cat=build_world">衛星画像プラグイン</a></li>
+<li><a href="https://www.techlife-hacking.com/?p=1908">Gazebo上に歩行者を障害物として出現させる！</a></li>
+<li><a href="https://qiita.com/koichi_baseball/items/b3ff4d2b58a05eb446d0">【ROS2】Gazeboで動的環境のシミュレーション</a></li>
+<li><a href="https://mizuncoonote.blogspot.com/2021/11/blender-free3d-data-download-revue.html">blenderで使用可能な3Dフリー素材</a></li>
 </ul>
-<p>https://github.com/RAFALAMAO/hector-quadrotor-noetic
-<a href="https://memoteki.net/archives/2955">ROS/ROS2のGUIをWebブラウザ経由でお手軽に試せるDockerfileを公開しました</a></p>
-<h2 id="_4">内容</h2>
+<h2 id="robot">robot作り</h2>
 <ul>
-<li>
-<p>Mac上でのインストール方法</p>
+<li><a href="https://qiita.com/RyodoTanaka/items/b1ebd48da81669db7409">Gazebo + ROS で自分だけのロボットをつくる 3.COLLADAファイルをつくる</a></li>
+</ul>
+<h2 id="rosros2">ROS/ROS2連携した色々なロボットのシミュレーション</h2>
 <ul>
-<li>Homebrewでのインストール方法<ul>
-<li>/usr/local/share/gazebo/setup.bash</li>
+<li>4輪ステアリング<ul>
+<li><a href="https://github.com/ros-controls/ros_controllers/tree/noetic-devel/four_wheel_steering_controller">four_wheel_steering_controller</a></li>
+<li><a href="https://www.youtube.com/watch?v=4_bftUbQTaM&amp;t=90s">Four Wheel Steering Robot Simulation Tutorial</a></li>
 </ul>
 </li>
-<li>Dockerを用いたインストール方法
-https://www.drbuho.com/jp/how-to/uninstall-docker-mac</li>
-<li>
-<p>UTM仮想環境(Ubuntu)内にDockerをインストールする方法</p>
-<ul>
-<li>https://www.server-world.info/query?os=Ubuntu_22.04&amp;p=japanese
-https://docs.getutm.app/guides/ubuntu/#creating-a-new-virtual-machine</li>
-</ul>
-<p>https://www.server-world.info/query?os=Ubuntu_22.04&amp;p=japanese
-- Gazeboの概要
-    - Gazeboについて
-    - Gazeboのバージョン
-    - ROS/ROS2連携する際の互換性
-- Gazeboの使い方
-    - Gazeboの操作方法
-- GUIの使い方
-- CUIの使い方(gz --verbose)
-    - ロボットの作り方
-- ロボット本体
-- センサーの配置
-- 
-    - worldの作り方
-    - プラグインの設定方法と作り方</p>
-</li>
+<li>差動二輪<ul>
+<li><a href="https://github.com/ROBOTIS-GIT/turtlebot3_simulations">turtlebot3_simulations</a></li>
 </ul>
 </li>
-<li>
-<p>ROS/ROS2連携した色々なロボットのシミュレーション</p>
-</li>
+<li>差動四輪<ul>
+<li><a href="https://github.com/husky/husky">husky</a></li>
 </ul>
-<p>https://github.com/ros-simulation/gazebo_ros_pkgs/blob/noetic-devel/gazebo_plugins/src/gazebo_ros_diff_drive.cpp
-- 4輪ステアリング
-    - https://www.youtube.com/watch?v=4_bftUbQTaM&amp;t=90s
-    https://github.com/ros-controls/ros_controllers/tree/noetic-devel/four_wheel_steering_controller
-- 差動二輪
-https://github.com/ROBOTIS-GIT/turtlebot3_simulations
-- 差動四輪
-- メカナム
-- オムニ
-https://qiita.com/srs/items/6191b81d564fd934aa6a
-- アッカーマンステアリング
-- クローラー
-- クアドロコプタードローン
-    https://github.com/RAFALAMAO/hector-quadrotor-noetic
-- モバイルマニピュレータ
-    - https://github.com/hsr-project/hsrb_wrs_gazebo_launch</p>
-<ul>
+</li>
+<li>メカナム<ul>
+<li><a href="https://github.com/DaiGuard/fuji_mecanum">fuji_mecanum</a></li>
+<li><a href="https://github.com/vstoneofficial/mecanumrover_samples">mecanumrover_samples</a></li>
+</ul>
+</li>
+<li>オムニ<ul>
+<li>https://qiita.com/srs/items/6191b81d564fd934aa6a</li>
+<li><a href="https://www.remma.net/?p=1739">gazeboによる，オムニホイール型ロボットのシミュレーション環境構築</a></li>
+</ul>
+</li>
+<li>アッカーマンステアリング<ul>
+<li><a href="https://techshare.co.jp/faq/agilex/limo_gazebo.html">【AgileX LIMO】LIMOをGazebo上で動かす</a></li>
+</ul>
+</li>
+<li>クローラー<ul>
+<li></li>
+</ul>
+</li>
+<li>クアドロコプタードローン<ul>
+<li><a href="https://github.com/RAFALAMAO/hector-quadrotor-noetic">hector-quadrotor-noetic</a></li>
+</ul>
+</li>
+<li>モバイルマニピュレータ<ul>
+<li><a href="https://github.com/hsr-project/hsrb_wrs_gazebo_launch">HSR</a></li>
+</ul>
+</li>
 <li>マニピュレータ<ul>
-<li>https://github.com/utecrobotics/ur5</li>
-<li>https://demura.net/robot/athome/14710.html</li>
+<li><a href="https://github.com/utecrobotics/ur5">ur5</a></li>
+<li><a href="https://demura.net/robot/athome/14710.html">UR5をGazeboで動かす</a></li>
 </ul>
 </li>
-<li>4脚
-https://qiita.com/nisshan_/items/fa4a4ab807c5e4bb1ff4</li>
+<li>4脚ロボット<ul>
+<li><a href="https://qiita.com/nisshan_/items/fa4a4ab807c5e4bb1ff4">Mini Pupper</a></li>
+<li><a href="https://techshare.co.jp/faq/unitree/go1_gazebo.html">【Unitree Go1】Go1 を Gazebo上で動かす</a></li>
 </ul>
-<p>world作り
-https://classic.gazebosim.org/tutorials?tut=static_map_plugin&amp;cat=build_world</p>
-<p>https://mizuncoonote.blogspot.com/2021/11/blender-free3d-data-download-revue.html
-https://harvestx.jp/technology/
-https://github.com/HarvestX/h6x-Internship/tree/main
-robot作り
-https://qiita.com/RyodoTanaka/items/b1ebd48da81669db7409
-https://classic.gazebosim.org/tutorials?tut=ros_gzplugins&amp;cat=connect_ros#PlanarMovePlugin</p>
+</li>
+</ul>
+<h2 id="_1">自律走行関連</h2>
+<ul>
+<li><a href="https://qiita.com/BEIKE/items/825e62bbd8d92b6d347e">qiita_@BEIKE_2次元地図からGazeboのmodelを作ってナビゲーションしてみた</a></li>
+<li><a href="https://zenn.dev/tasada038/articles/0a69eb6c6b444f">ROS2: Turtlebot3のGazeboシミュレーションをHumble/Noeticで動かす</a></li>
+</ul>
 
 
 
