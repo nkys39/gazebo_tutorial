@@ -67,3 +67,14 @@ ros_kortexパッケージは、ge3とgen3_liteに対応している。デフォ�
 roslaunch kortex_gazebo spawn_kortex_robot.launch
 ```
 ![spawn_gen3_lite.gif](./img/kinova_gen3_lite/spawn_gen3_lite.gif)
+
+同時に起動しているRvizを使用して、moveit経由でkinova_gen3_liteを動かす手順は以下になります。
+
+1. Rvizの左ウインドウにある`Display`→`Global Options`→`Fixed Frame`を`map`→`world`に変更する
+2. `Display`下部の`Add`→`By Display Type`→`rviz/RobotModel`を選択して`OK`を選択(Rviz上にkinova_gen3_liteが表示される)
+3. 同様に`Display`下部の`Add`→`By Display Type`→`moveit_ros_visualization/MotionPlanning`を選択して`OK`(`Display`の下に`MotionPlanning`とRviz上に`InteractiveMarker`が表示される)
+4. Rviz上の`InteractiveMarker`を動かし、`MotionPlanning`上の`Plan`→`Execute`を選択すると、経路計画し、実行される
+
+
+
+![moveit_gen3_lite.gif](./img/kinova_gen3_lite/moveit_gen3_lite.gif)

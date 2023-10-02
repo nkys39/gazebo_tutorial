@@ -655,6 +655,14 @@ ros_kortexパッケージはconanに依存している。conanは、ビルド時
 <div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>roslaunch kortex_gazebo spawn_kortex_robot.launch
 </code></pre></div>
 <img alt="spawn_gen3_lite.gif" src="../img/kinova_gen3_lite/spawn_gen3_lite.gif" /></p>
+<p>同時に起動しているRvizを使用して、moveit経由でkinova_gen3_liteを動かす手順は以下になります。</p>
+<ol>
+<li>Rvizの左ウインドウにある<code>Display</code>→<code>Global Options</code>→<code>Fixed Frame</code>を<code>map</code>→<code>world</code>に変更する</li>
+<li><code>Display</code>下部の<code>Add</code>→<code>By Display Type</code>→<code>rviz/RobotModel</code>を選択して<code>OK</code>を選択(Rviz上にkinova_gen3_liteが表示される)</li>
+<li>同様に<code>Display</code>下部の<code>Add</code>→<code>By Display Type</code>→<code>moveit_ros_visualization/MotionPlanning</code>を選択して<code>OK</code>(<code>Display</code>の下に<code>MotionPlanning</code>とRviz上に<code>InteractiveMarker</code>が表示される)</li>
+<li>Rviz上の<code>InteractiveMarker</code>を動かし、<code>MotionPlanning</code>上の<code>Plan</code>→<code>Execute</code>を選択すると、経路計画し、実行される</li>
+</ol>
+<p><img alt="moveit_gen3_lite.gif" src="../img/kinova_gen3_lite/moveit_gen3_lite.gif" /></p>
 
 
 
