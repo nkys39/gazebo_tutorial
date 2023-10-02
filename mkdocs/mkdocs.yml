@@ -31,3 +31,5 @@ nav:
     - ③macOSのDocker上のUbuntuで動かす: docker_install.md
     - ④仮想マシン(UTM)のDocker上のUbuntuで動かす: utm_docker_install.md
   - Gazeboの参考ページ: gazebo_advance.md 
+  - 各種ロボット: 
+    - Kinova Gen3 Lite: kinova_gen3_lite.md
